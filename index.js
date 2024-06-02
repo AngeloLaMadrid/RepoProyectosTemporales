@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Aplicación escuchando en http://localhost:${port}`);
 });
-//node index.jska 
+//node index.json
