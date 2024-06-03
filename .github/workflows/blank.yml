@@ -1,22 +1,22 @@
-name: CI
+# Nombre del flujo de trabajo
+name: DemoGitHubActions
 
 on:
+  # Se dispara el flujo de trabajo cuando se realiza un push o pull a la rama 
   push:
     branches: [ AutomatizacionGitHubActions ]
   pull_request:
     branches: [ AutomatizacionGitHubActions ]
   workflow_dispatch:
 
+# Trabajos del flujo de trabajo
 jobs:
-
   build:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest  # Ejecución en Ubuntu
     steps:
-    - uses: actions/checkout@v2
-    
+    - uses: actions/checkout@v2  # Comprobación del repositorio
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v3  # Despliegue en GitHub Pages
       with:
-        github_token: ${{ secrets.MY_GITHUB_TOKEN }}
-        publish_dir: ./
+        github_token: ${{ secrets.MY_GITHUB_TOKEN }}  # Token de GitHub/ esto lo creé en la configuración del repositorio
+        publish_dir: ./  # Directorio a publicar
