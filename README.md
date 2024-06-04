@@ -1,4 +1,4 @@
-# GitHub Activos estado de la rama-actions RepoProyectosTemporales
+# GitHub Actions estado de la rama-actions RepoProyectosTemporales
 
 [![Deploy to Heroku](https://github.com/AngeloLaMadrid/RepoProyectosTemporales/actions/workflows/blank.yml/badge.svg?branch=AutomatizacionGitHubActions)](https://github.com/AngeloLaMadrid/RepoProyectosTemporales/actions/workflows/blank.yml)
 
