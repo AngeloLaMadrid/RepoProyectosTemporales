@@ -19,5 +19,5 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3  # Despliegue en GitHub Pages
       with:
-        github_token: ${{ secrets.MY_GITHUB_TOKENtes }}  # Token de GitHub/ esto lo creé en la configuración del repositorio
+        github_token: ${{ secrets.MY_GITHUB_TOKEN }}  # Token de GitHub/ esto lo creé en la configuración del repositorio
         publish_dir: ./  # Directorio a publicar
